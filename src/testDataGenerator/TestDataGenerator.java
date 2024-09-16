@@ -1,25 +1,31 @@
 package testDataGenerator;
 import com.github.javafaker.Faker;
+
+import static org.bouncycastle.asn1.iana.IANAObjectIdentifiers.mail;
+
+
 @SuppressWarnings("unused")
 public class TestDataGenerator {
 	static int numberOfData = 10; //Specify the number of data
+
 	public static void main(String[] args) {
-		for (int i=0; i<numberOfData; i++ ) 
-		{
-			print(randomEmail()); //call the method here
-		}
-	}
+        int i;
+        for (i = 0; i < numberOfData; i++) {
+            print(randomEmail());
+        }
+        print("TotalCount: " + i);
+    }
 	static Faker faker = new Faker();
 	public static String randomFirstName() {
 		return faker.address().firstName();
-		}
-	private static String randomlastName() {
+	}
+	public static String randomlastName() {
 		return faker.address().lastName();
-		}
-	private static String randomName() {
+	}
+	private String randomName() {
 		return randomFirstName() +" " + randomlastName();
-		}
-	private static String randomEmail() {
+	}
+	public static String randomEmail() {
 		return randomFirstName().toLowerCase() + "_" + randomlastName().toLowerCase().concat("@yopmail.com");
 	}
 	private static String randomCity() {
