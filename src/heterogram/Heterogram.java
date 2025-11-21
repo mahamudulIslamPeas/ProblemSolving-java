@@ -18,13 +18,14 @@ public class Heterogram{
              if(arr[i]==arr[j]){
                  count++;
              }*/
-           }
+        }
         if(count > 0){
+            System.out.println("Test Case Failed: Not a Heterogram");
             System.out.println("Has Repeating letter");
         }
         else{
             System.out.println("Does not have repeating letters");
         }
-        }
-
     }
+
+}
