@@ -2,8 +2,8 @@ package hackerRank;
 
 import java.util.Scanner;
 
-/*
-    lexicographically/alphabetically sorting.
+/* String problem Introduction
+    Lexicographically/alphabetically sorting.(Which ever word comes first alphabetically. Like dictionary)
  */
 public class StringProblem {
 
